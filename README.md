@@ -18,7 +18,7 @@ Proyecto hecho con Node.js y Express para administrar una pizzería. Utiliza Mon
 1. **Iniciar la base de datos en Docker:**
    - Abre la aplicación Docker Desktop.
    - Ve a la sección de "Containers".
-   - Busca el contenedor de MongoDB y dale al botón de Play (Start) para encenderlo en el puerto 27017.
+   - Busca el contenedor de MongoDB y dale al botón de Start para encenderlo en el puerto 27017.
 
 2. **Verificar en MongoDB Compass:**
    - Abre MongoDB Compass.
