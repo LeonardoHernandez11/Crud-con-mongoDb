@@ -28,7 +28,7 @@ Proyecto de una API REST hecha con Node.js y Express para administrar una pizzer
 3. **Iniciar el servidor:**
    - Abre la carpeta del proyecto en VS Code.
    - Abre la terminal e instala las dependencias ejecutando: `npm install`
-   - Inicia el servidor con el comando: `node index.js`
+   - Inicia el servidor con el comando: `npm run dev`
    - En la terminal saldrá el mensaje confirmando que el servidor escucha en el puerto 3000.
 
 ---
