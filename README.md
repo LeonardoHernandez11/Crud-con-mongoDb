@@ -1,4 +1,4 @@
-# Descripción CRUD con MongoDb 
+# CRUD con MongoDb 
 
 ## Descripción
 Proyecto de una API REST hecha con Node.js y Express para administrar una pizzería. Utiliza MongoDB corriendo en un contenedor de Docker Desktop para guardar la información y Postman para hacer las pruebas de las rutas.
