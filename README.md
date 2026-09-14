@@ -22,7 +22,7 @@ Proyecto de una API REST hecha con Node.js y Express para administrar una pizzer
 
 2. **Verificar en MongoDB Compass:**
    - Abre MongoDB Compass.
-   - Conéctate a `mongodb://localhost:27017`.
+   - Conéctate a `mongodb://root:12345678@localhost:27017/`.
    - Revisa que aparezca la base de datos `pizzeria` con la colección `pizzas`.
 
 3. **Iniciar el servidor:**
