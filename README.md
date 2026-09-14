@@ -1,31 +1,50 @@
-# Crud con mongoDb
+# Descripción CRUD con MongoDb 
 
-## Descripción del Proyecto
-Este proyecto es una API REST desarrollada en **Node.js** y **Express** para la gestión de productos de una pizzería (operaciones CRUD). Utiliza **MongoDB** alojado en un contenedor de **Docker Desktop** para la persistencia de los datos, **MongoDB Compass** para la administración gráfica de la base de datos y **Postman** para la ejecución del testing.
-
----
-
-## Requisitos Previos (Interfaces Gráficas y Entorno)
-- [Node.js](https://nodejs.org/) (v16 o superior)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Aplicación gráfica)
-- [MongoDB Compass](https://www.mongodb.com/products/tools/compass) (Cliente gráfico para MongoDB)
-- [Postman](https://www.postman.com/) (Aplicación gráfica para pruebas de API)
+## Descripción
+Proyecto de una API REST hecha con Node.js y Express para administrar una pizzería. Utiliza MongoDB corriendo en un contenedor de Docker Desktop para guardar la información y Postman para hacer las pruebas de las rutas.
 
 ---
 
-## Instrucciones de Ejecución (Paso a Paso con Aplicaciones Gráficas)
-
-### 1. Iniciar la Base de Datos en Docker Desktop
-1. Abre la aplicación **Docker Desktop** en tu equipo.
-2. En el panel lateral izquierdo, selecciona la sección **Containers**.
-3. Localiza el contenedor de MongoDB (por ejemplo, `mongo` o el nombre asignado en clase).
-4. Haz clic en el botón de reproducción **▶️ (Start)** ubicado en la columna de acciones del contenedor.
-5. Verifica que el estado cambie a **Running** (color verde) y que el puerto asignado sea `27017:27017`.
+## Requisitos
+- Node.js
+- Docker Desktop
+- MongoDB Compass
+- Postman
 
 ---
 
-### 2. Verificar la Conexión en MongoDB Compass
-1. Abre **MongoDB Compass**.
-2. En la pantalla inicial (*New Connection*), selecciona tu conexión guardada o ingresa la URI de conexión:
-   ```text
-   mongodb://localhost:27017
+## Cómo ejecutar el proyecto paso a paso
+
+1. **Iniciar la base de datos en Docker:**
+   - Abre la aplicación Docker Desktop.
+   - Ve a la sección de "Containers".
+   - Busca el contenedor de MongoDB y dale al botón de Play (Start) para encenderlo en el puerto 27017.
+
+2. **Verificar en MongoDB Compass:**
+   - Abre MongoDB Compass.
+   - Conéctate a `mongodb://localhost:27017`.
+   - Revisa que aparezca la base de datos `pizzeria` con la colección `pizzas`.
+
+3. **Iniciar el servidor:**
+   - Abre la carpeta del proyecto en VS Code.
+   - Abre la terminal e instala las dependencias ejecutando: `npm install`
+   - Inicia el servidor con el comando: `node index.js`
+   - En la terminal saldrá el mensaje confirmando que el servidor escucha en el puerto 3000.
+
+---
+
+## Rutas de la API (Endpoints)
+
+- GET /api/v1/pizzas - Muestra todas las pizzas.
+- GET /api/v1/pizzas/:id - Busca una pizza por su ID.
+- POST /api/v1/pizzas - Agrega una nueva pizza.
+- PUT /api/v1/pizzas/:id - Actualiza una pizza existente.
+- DELETE /api/v1/pizzas/:id - Elimina una pizza por su ID.
+
+---
+
+## Pruebas en Postman
+
+Se probaron todos los endpoints en Postman verificando que los datos se guarden correctamente en la base de datos con su ID.
+
+![Captura de pantalla de Postman](./captura_postman.png)
