@@ -35,6 +35,8 @@ Proyecto de una API REST hecha con Node.js y Express para administrar una pizzer
 
 ## Rutas de la API (Endpoints)
 
+URL Base: `http://localhost:3000`
+
 - GET /api/v1/pizzas - Muestra todas las pizzas.
 - GET /api/v1/pizzas/:id - Busca una pizza por su ID.
 - POST /api/v1/pizzas - Agrega una nueva pizza.
